@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "sap.ui.demo.basicTemplate",
+		"id": "vinibar.Login",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -12,7 +12,6 @@
 		"resources": "resources.json",
 		"ach": "ach"
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -29,10 +28,9 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.demo.basicTemplate.view.App",
+			"viewName": "vinibar.Login.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
@@ -53,20 +51,22 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "sap.ui.demo.basicTemplate.i18n.i18n"
+					"bundleName": "vinibar.Login.i18n.i18n"
 				}
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "sap.ui.demo.basicTemplate.view",
+				"viewPath": "vinibar.Login.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"async": true
@@ -75,7 +75,23 @@
 				{
 					"pattern": "",
 					"name": "home",
-					"target": ["home"]
+					"target": [
+						"home"
+					]
+				},
+				{
+					"pattern": "Login/",
+					"name": "login",
+					"target": [
+						"login"
+					]
+				},
+				{
+					"pattern": "Logout/",
+					"name": "logout",
+					"target": [
+						"logout"
+					]
 				}
 			],
 			"targets": {
@@ -84,6 +100,18 @@
 					"viewId": "home",
 					"viewLevel": 1,
 					"title": "{i18n>title}"
+				},
+				"login": {
+					"viewName": "Login",
+					"viewId": "login",
+					"viewLevel": 1,
+					"title": "{i18n>login_title}"
+				},
+				"logout": {
+					"viewName": "Logout",
+					"viewId": "logout",
+					"viewLevel": 1,
+					"title": "{i18n>logout_title}"
 				}
 			}
 		}

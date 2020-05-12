@@ -1,10 +1,10 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+	"./BaseController",
 	"sap/ui/demo/basicTemplate/model/formatter"
-], function(Controller, formatter) {
+], function (BaseController, formatter) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.basicTemplate.controller.App", {
+	return BaseController.extend("vinibar.Login.controller.App", {
 
 		formatter: formatter,
 

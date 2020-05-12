@@ -1,0 +1,7 @@
+<mvc:View controllerName="vinibar.Login.controller.Logout" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+    <Page id="login" title="Logout">
+        <content>
+            <Text text="Logout efetuado"></Text>
+        </content>
+    </Page>
+</mvc:View>

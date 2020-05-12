@@ -1,0 +1,17 @@
+<mvc:View controllerName="vinibar.Login.controller.Login" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:form="sap.ui.layout.form">
+    <Page id="login" title="Login">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <form:SimpleForm layout="ResponsiveGridLayout" singleContainerFullSize="false">
+                    <form:content>
+                        <Label labelFor="iLogin" text="Login"></Label>
+                        <Input id="iLogin" type="Text" required="true"></Input>
+                        <Label labelFor="iPassword" text="Password"></Label>
+                        <Input id="iPassword" type="Password" required="true"></Input>
+                        <Button text="Login" press=".onLogin"></Button>
+                    </form:content>
+                </form:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

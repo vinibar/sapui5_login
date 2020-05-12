@@ -17,7 +17,7 @@ sap.ui.define([
 		return sUrl + sUrlParameters + sHash;
 	}
 
-	return Opa5.extend("sap.ui.demo.basicTemplate.test.integration.pages.Common", {
+	return Opa5.extend("vinibar.Login.test.integration.pages.Common", {
 
 		iStartTheApp : function (oOptions) {
 			oOptions = oOptions || {};
